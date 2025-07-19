@@ -35,11 +35,8 @@ function App() {
     }
   };
 
-  const handleSelectMovie = (movieTitle: string) => {
-    const movie = movies.find(movie => movie.title === movieTitle);
-    if (movie) {
-      setSelectedMovie(movie);
-    }
+  const handleSelectMovie = (movie: Movie) => {
+    setSelectedMovie(movie);
   };
 
   const closeModal = () => {
